@@ -12,7 +12,7 @@ Saznajte više o [providers](/docs/providers).
 
 ---
 
-## Odaberite model
+## Odabir modela
 
 Nakon što konfigurirate svog provajdera, možete odabrati model koji želite upisivanjem:
 
@@ -41,7 +41,7 @@ Evo nekoliko modela koji dobro rade sa OpenCode, bez posebnog redosleda. (Ovo ni
 
 ---
 
-## Postavite zadano
+## Postavljanje zadanog
 
 Da postavite jedan od ovih kao zadani model, možete postaviti ključ `model` u svom
 OpenCode config.
@@ -58,7 +58,7 @@ Ako ste konfigurirali [prilagođenog provajdera](/docs/providers#custom), `provi
 
 ---
 
-## Konfigurišite modele
+## Konfiguracija modela
 
 Možete globalno konfigurirati opcije modela kroz config.
 
@@ -180,7 +180,7 @@ Možete nadjačati postojeće varijante ili dodati svoje:
 }
 ```
 
-### Varijante ciklusa
+### Kruženje kroz varijante
 
 Koristite keybind `variant_cycle` za brzo prebacivanje između varijanti. [Saznajte više](/docs/keybinds).
 
@@ -192,10 +192,10 @@ Kada se OpenCode pokrene, on provjerava modele u sljedećem prioritetnom redosli
 2. Lista modela u OpenCode konfiguraciji.
 
 ```json title="opencode.json"
-   {
-     "$schema": "https://opencode.ai/config.json",
-     "model": "anthropic/claude-sonnet-4-20250514"
-   }
-   ```
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-20250514"
+}
+```
 
 Format ovdje je `provider/model`. 3. Posljednji korišteni model. 4. Prvi model koji koristi interni prioritet.
